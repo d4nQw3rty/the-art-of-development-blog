@@ -11,7 +11,7 @@ RSpec.describe Post, type: :model do
     it 'is not valid without a title' do
       subject.title = nil
       expect(subject).to_not be_valid
-    end  
+    end
 
     it 'is not valid without text' do
       subject.text = nil
@@ -32,6 +32,5 @@ RSpec.describe Post, type: :model do
       subject.likes_counter = -1
       expect(subject).to_not be_valid
     end
-  end  
-end 
-
+  end
+end

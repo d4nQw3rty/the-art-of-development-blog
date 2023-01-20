@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-
   subject do
     Comment.create(id: 1, text: 'Text', post_id: 1, author_id: 1)
   end
