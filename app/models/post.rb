@@ -12,8 +12,6 @@ class Post < ApplicationRecord
     comments.limit(5).order(created_at: :desc)
   end
 
-  private
-
   def update_posts_counter
     counter = Post.where(author_id:).count
     author.update(posts_counter: counter)

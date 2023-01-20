@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe Post, type: :model do
   subject do
@@ -31,6 +32,11 @@ RSpec.describe Post, type: :model do
     it 'is not valid with a negative likes counter' do
       subject.likes_counter = -1
       expect(subject).to_not be_valid
+    end
+
+    it 'latest_comments method should return the last 5 comments' do
+      6.times { Comment.create(text: 'Text', author_id: 1, post_id: subject.id) }
+      expect(subject.latest_comments.count) == 5
     end
   end
 end
