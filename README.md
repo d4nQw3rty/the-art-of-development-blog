@@ -3,12 +3,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Microverse Education project by Danys Linares</b></h3>
-
 </div>
 
 # 📗 Table of Contents
@@ -33,7 +28,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Tangled blog app <a name="about-project"></a>
+# 📖 Blog app <a name="about-project"></a>
 
 **Tangled** Is a fully functional website that shows the list of posts and to interact with them by adding comments and liking posts.
 
