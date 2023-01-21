@@ -30,7 +30,7 @@
 
 # 📖 Blog app <a name="about-project"></a>
 
-**Tangled** Is a fully functional website that shows the list of posts and to interact with them by adding comments and liking posts.
+**The Art of Development** Is a fully functional website that shows the list of posts and to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
