@@ -3,8 +3,7 @@
 <img src='<%= @user.photo %>' alt="<%= @user.name %>'s profile picture" />
 <h2><%= @user.name%></h2>
 <p>
-  Number of post:
-  <%= @user.posts_counter %>
+  Number of post: <%= @user.posts_counter %>
 </p>
 </div>
 <ul>
@@ -33,3 +32,6 @@
         </li>
     <% end %>
     </ul>
+    <button type='Button'>
+    Pagination
+    </button>
