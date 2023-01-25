@@ -1,6 +1,35 @@
-<h1>These are the Posts for the users<h1>
-<section>
-<p>%user.name%</p>
-<p>%user.bio%</p>
-<p>%user.posts_counter%</p>
-</section>
+<h1>These are the Posts for the users</h1>
+<div>
+<img src='<%= @user.photo %>' alt="<%= @user.name %>'s profile picture" />
+<h2><%= @user.name%></h2>
+<p>
+  Number of post:
+  <%= @user.posts_counter %>
+</p>
+</div>
+<ul>
+    <% @user.posts.each do |post| %>
+        <li>
+          <div>
+            <h3><%= link_to post.title, user_post_path(post.author_id, post) %></h3>
+            <p><%= post.text %></p>
+          </div>
+
+        <div>
+          <div>            
+            <p><%= post.comments_counter %></p>
+          </div>
+
+          <div>
+            <p class='post-counter'><%= post.likes_counter %></p>
+          </div>
+        </div>
+
+        <div>
+        <% post.latest_comments.each do |comment| %>
+          <p><%= comment.author.name %>: <%= comment.text %></p>
+        <% end %>
+        </div>    
+        </li>
+    <% end %>
+    </ul>
