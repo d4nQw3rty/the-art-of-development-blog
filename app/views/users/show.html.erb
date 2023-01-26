@@ -1,34 +1,42 @@
-<section>
-<img src='<%= @user.photo %>' alt="<%= @user.name %>'s profile picture"/>
-<div>
-  <h2><%= @user.name %></h2>
-  <p>Number of Posts: <%= @user.posts_counter %></p>
+<div class='post_container'>
+  <div class='post_header'>
+    <div class='post_img '>
+      <img class='header_photo' src='<%= @user.photo %>' alt="<%= @user.name %>'s profile picture"/>
+    </div>
+    <div class='posts_info'>
+      <h2><%= @user.name %></h2>
+      <p class='header_counter'>Number of Posts: <%= @user.posts_counter %></p>
+    </div>
+  </div>
+  <div class='bio_container'>
+    <div>
+      <h3>Biography</h3>
+    </div>
+    <div>
+      <p><%= @user.bio %></p>
+    </div>
+  </div>
+  <ul class='post_list'>
+    <% @user.latest_posts.each do | post | %>
+      <li class = 'list_element'>
+        <div>
+          <h3><%= link_to post.title, user_post_path(@user, post) %></h3>
+          <p><%= post.text %></p>
+        </div> 
+        <div class='counter_section'>       
+          <div>          
+            <p>Comments: <%= post.comments_counter %></p>
+          </div>
+          <div>                  
+            <p>Likes: <%= post.likes_counter %></p>
+          </div>      
+        </div>
+     </li>
+    <% end %>
+  </ul>
+  <div class='action_section  '>
+    <button type='button' class='button_style'>
+      <%= link_to 'See all posts', user_posts_path(@user) %>
+    </button>
+  </div>
 </div>
-</section>
-<section>
-<h3>Biography</h3>
-<p><%= @user.bio %></p>
-</section>
-<ul>
-<% @user.latest_posts.each do | post | %>
-    <li>
-      <div>
-        <h3><%= link_to post.title, user_post_path(@user, post) %></h3>
-        <p><%= post.text %></p>
-      </div>
-
-      <div>
-        <div>          
-          <p><%= post.comments_counter %> comments</p>
-        </div>
-
-        <div>          
-          <p><%= post.likes_counter %> likes</p>
-        </div>
-      </div>
-    </li>
-<% end %>
-</ul>
- <button type='button'>
-  <%= link_to 'See all posts', user_posts_path(@user) %>
-  </button>
