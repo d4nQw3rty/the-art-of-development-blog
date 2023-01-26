@@ -20,7 +20,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'Checks for full list of posts info into the body' do
-      expect(response.body).to include('Number of post: 1')
+      expect(response.body).to include('Number of Posts: 1')
       expect(response.body).to include('This is my first post')
     end
   end
