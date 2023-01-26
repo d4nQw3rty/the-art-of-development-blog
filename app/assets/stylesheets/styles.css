@@ -44,24 +44,21 @@
 }
 
 .post_container {
- margin: 5% 10%;
+  margin: 5% 10%;
 }
 
 .post_header {
-  display: flex;
- 
- 
+  display: flex; 
   gap: 15px;
 }
 
 .post_img {
   display: flex;
-    flex-grow: 1;
-   
-    align-items: center;
+  flex-grow: 1;   
+  align-items: center;
 }
 
-.posts_info {  
+.posts_info {
   display: flex;
   flex-direction: row;
   flex-grow: 10;
@@ -110,7 +107,7 @@
   border: solid;
   padding: 5px 5px;
   background: #fff;
-  box-shadow: 4px 4px 1px 0px;
+  box-shadow: 4px 4px 1px;
 }
 
 a {
@@ -138,7 +135,7 @@ a:hover {
 
 .comments_header {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .comments_title {
