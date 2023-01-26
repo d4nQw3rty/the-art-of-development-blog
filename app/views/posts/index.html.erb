@@ -1,1 +1,42 @@
-<h1>These are the Posts for the users<h1>
+<div class='post_container'>
+  <div class='post_header'>
+    <div class='post_img '>
+      <img class='header_photo' src='<%= @user.photo %>' alt="<%= @user.name %>'s profile picture"/>
+    </div>
+    <div class='posts_info'>
+      <h2><%= @user.name %></h2>
+      <p class='header_counter'>Number of Posts: <%= @user.posts_counter %></p>
+    </div>
+  </div>
+    <ul class='post_list'>
+      <% @user.posts.each do |post| %>
+        <li>
+        <div class = 'list_element'>
+          <div>
+            <h3><%= link_to post.title, user_post_path(post.author_id, post) %></h3>
+            <p><%= post.text %></p>
+          </div>
+          <div class='counter_section'>
+            <div>            
+              <p>Comments: <%= post.comments_counter %></p>
+            </div>
+            <div>
+              <p class='post-counter'>Likes: <%= post.likes_counter %></p>
+            </div>
+            </div>
+          </div>
+
+        <div class = 'post_comments'>
+        <% post.latest_comments.each do |comment| %>
+          <p><%= comment.author.name %>: <%= comment.text %></p>
+        <% end %>
+        </div>    
+        </li>
+    <% end %>
+    </ul>
+    <div class='action_section  '>
+    <button type='Button'>
+    Pagination
+    </button>
+    </div>
+<div>

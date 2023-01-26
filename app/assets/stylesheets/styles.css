@@ -1,0 +1,151 @@
+.index_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.index_header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.header_img {
+  display: flex;
+}
+
+.header_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.header_info {
+  display: flex;
+  flex-grow: 3;
+  justify-content: space-between;
+  align-items: self-end;
+  border: solid;
+  padding: 15px 30px;
+}
+
+.header_photo {
+  height: 120px;
+  width: 100px;
+  border: solid;
+}
+
+.header_counter {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.post_container {
+  margin: 5% 10%;
+}
+
+.post_header {
+  display: flex;
+  gap: 15px;
+}
+
+.post_img {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.posts_info {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 10;
+  justify-content: space-between;
+  border: solid;
+  padding: 15px 30px;
+}
+
+.bio_container {
+  border: solid;
+  margin-top: 30px;
+  padding: 0 2%;
+}
+
+.post_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.list_element {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  margin-top: 30px;
+  padding: 0 2%;
+}
+
+.counter_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 5%;
+}
+
+.action_section {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 10px 0;
+  justify-content: center;
+}
+
+.button_style {
+  border: solid;
+  padding: 5px 5px;
+  background: #fff;
+  box-shadow: 4px 4px 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: red;
+}
+
+.post_comments {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  margin-top: 2px;
+  padding: 0 2%;
+}
+
+.comments_box_border {
+  border: solid;
+  margin-top: 2px;
+  padding: 0 2%;
+}
+
+.comments_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments_title {
+  margin-bottom: 0;
+}
+
+.top_mrg {
+  margin-top: 0;
+}
+
+.mrg_zero {
+  margin: 2px 0 2px 0;
+}

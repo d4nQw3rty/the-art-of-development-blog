@@ -1,1 +1,27 @@
-<h1><%= @post %></h1>
+<div class='post_container'>
+  <div class='comments_header comments_box_border'>  
+    <div>
+      <h2 class='comments_title'><%= @post.title %> by <%= @post.author.name %></h2>
+    </div> 
+    <div class='counter_section'>
+      <p class='top_mrg'>
+        Comments:               
+          <%=@post.comments_counter %>
+      </p>
+      <p class='top_mrg'>
+        Likes:               
+          <%=@post.likes_counter %>
+      </p>
+    </div>
+    <div>
+    <p><%= @post.text %></p>  
+  </div>
+  </div>
+  <ul class='post_list comments_box_border'>    
+    <% @post.comments.each do |comment| %>
+    <li>
+      <p class= 'mrg_zero'><%= comment.author.name %>: <%= comment.text %></p>       
+    </li>
+  <% end %>
+  </ul>
+</div>

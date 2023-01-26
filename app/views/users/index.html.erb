@@ -1,1 +1,16 @@
-<h1>Welcome to user index page<h1>
+<section class='index_container'>
+<h2>Welcome to user index page</h2>
+<ul class='header_ul'>
+  <% @users.each do |user| %>
+    <li class= 'index_header'>
+      <div class= 'header_img'>
+        <img class='header_photo' src='<%= user.photo %>' alt="<%= user.name %>'s profile picture" />
+      </div>
+      <div class='header_info'>
+        <h2><%= link_to user.name, user_path(user) %></h2>
+        <p class='header_counter'>Number of Posts: <%= user.posts_counter %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
+</section>
