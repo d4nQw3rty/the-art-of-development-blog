@@ -48,13 +48,13 @@
 }
 
 .post_header {
-  display: flex; 
+  display: flex;
   gap: 15px;
 }
 
 .post_img {
   display: flex;
-  flex-grow: 1;   
+  flex-grow: 1;
   align-items: center;
 }
 
@@ -99,7 +99,7 @@
 .action_section {
   display: flex;
   flex-direction: row;
-  margin: 10px 0 10px 0px;
+  margin: 10px 0 10px 0;
   justify-content: center;
 }
 
@@ -141,6 +141,7 @@ a:hover {
 .comments_title {
   margin-bottom: 0;
 }
+
 .top_mrg {
   margin-top: 0;
 }
