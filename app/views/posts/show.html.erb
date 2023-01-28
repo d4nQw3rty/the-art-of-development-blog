@@ -12,16 +12,20 @@
         Likes:               
           <%=@post.likes_counter %>
       </p>
-    </div>
+    </div>    
     <div>
     <p><%= @post.text %></p>  
   </div>
+  </div>
+  <div class='l'>
+  <%= render 'likes/likes_form' %>
   </div>
   <ul class='post_list comments_box_border'>    
     <% @post.comments.each do |comment| %>
     <li>
       <p class= 'mrg_zero'><%= comment.author.name %>: <%= comment.text %></p>       
     </li>
-  <% end %>
+  <% end %>  
   </ul>
+  <%= render 'comments/new' %>
 </div>
