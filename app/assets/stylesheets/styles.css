@@ -157,7 +157,7 @@ a:hover {
 
 .form_style {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   margin-top: 30px;
   padding: 0 2%;
   align-items: center;
