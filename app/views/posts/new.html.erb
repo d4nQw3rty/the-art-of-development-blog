@@ -3,11 +3,11 @@
 <%= form_with  model: @post, class:"form_style", local: true do |f| %>
   <div>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title,  :class => "input_style" %>
   </div>
   <div>
   <%= f.label :text %>
-  <%= f.text_area :text %>
+  <%= f.text_area :text, :class => "textarea_style" %>
   </div>
   
   <%= f.submit "Send Post", :class => "button_style" %>

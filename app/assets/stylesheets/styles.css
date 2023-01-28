@@ -168,7 +168,13 @@ a:hover {
   text-align: center;
 }
 
-.form_style > input, textarea {
+.textarea_style {
+  border: solid;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.input_style {
   border: solid;
   border-radius: 5px;
 }
