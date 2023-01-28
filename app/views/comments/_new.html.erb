@@ -1,7 +1,7 @@
 <%= form_with url: user_post_comments_path(user_id: @current_user.id, post_id: @post.id), class:"form_style", model: Comment do |form| %>
   <%= form.hidden_field :post_id, value: @post.id %>
   <div class='flex-column'>
-    <%= form.text_field :text, placeholder: "Comment something" %>
+    <%= form.text_area :text, placeholder: "Comment something" %>
   </div>
     <%= form.submit "Add comment", :class => "button_style" %>
 <% end %>
