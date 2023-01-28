@@ -13,7 +13,7 @@
         <li>
         <div class = 'list_element'>
           <div>
-            <h3><%= link_to post.title, user_post_path(post.author_id, post) %></h3>
+            <h3><%= link_to post.title, user_post_path(@user, post) %></h3>
             <p><%= post.text %></p>
           </div>
           <div class='counter_section'>
