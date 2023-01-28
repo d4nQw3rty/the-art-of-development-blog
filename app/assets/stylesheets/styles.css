@@ -168,7 +168,7 @@ a:hover {
   text-align: center;
 }
 
-.form_style input, textarea {
+.form_style > input, textarea {
   border: solid;
   border-radius: 5px;
 }
