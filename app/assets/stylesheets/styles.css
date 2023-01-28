@@ -101,6 +101,7 @@
   flex-direction: row;
   margin: 10px 0 10px 0;
   justify-content: center;
+  gap: 5%;
 }
 
 .button_style {
@@ -148,4 +149,32 @@ a:hover {
 
 .mrg_zero {
   margin: 2px 0 2px 0;
+}
+
+.justify_right {
+  justify-content: right;
+}
+
+.form_style {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0 2%;
+  align-items: center;
+  gap: 10px;
+}
+
+.txt_center {
+  text-align: center;
+}
+
+.textarea_style {
+  border: solid;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.input_style {
+  border: solid;
+  border-radius: 5px;
 }
