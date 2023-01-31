@@ -31,39 +31,38 @@ RSpec.describe 'Posts Show', type: :system do
     end
 
     describe 'Displays the entire body comments counters, and title' do
-      
-      it 'displays post title' do #1
+      it 'displays post title' do # 1
         visit user_post_path(@user, @post)
         expect(page).to have_content('First Step')
       end
 
-      it 'displays post author' do #2
+      it 'displays post author' do # 2
         visit user_post_path(@user, @post)
         expect(page).to have_content('Kanza Tehreen')
       end
 
-      it 'displays the  comments counters' do #3
+      it 'displays the  comments counters' do # 3
         visit user_post_path(@user, @post)
-        expect(page).to have_content('Comments: 3')       
+        expect(page).to have_content('Comments: 3')
       end
 
-      it 'displays the likes counter' do #4
+      it 'displays the likes counter' do # 4
         visit user_post_path(@user, @post)
         expect(page).to have_content('Likes: 1')
       end
 
-      it 'displays the posts body' do #5
+      it 'displays the posts body' do # 5
         visit user_post_path(@user, @post)
         expect(page).to have_content('This is my first post')
       end
 
-      it 'displays the the username of each commentor' do #6
+      it 'displays the the username of each commentor' do # 6
         visit user_post_path(@user, @post)
         expect(page).to have_content('Kanza Tehreen')
         expect(page).to have_content('Camilo Vela')
       end
-    
-      it 'displays all comments each commentor left' do #7
+
+      it 'displays all comments each commentor left' do # 7
         visit user_post_path(@user, @post)
         expect(page).to have_content('A lot of people are hungry')
         expect(page).to have_content('Nothing is impossible')
