@@ -178,3 +178,15 @@ a:hover {
   border: solid;
   border-radius: 5px;
 }
+
+.field {
+  margin-bottom: 0.5rem;
+}
+
+.actions {
+  margin-bottom: 2rem;
+}
+
+.field > input {
+  width: 100%;
+}
