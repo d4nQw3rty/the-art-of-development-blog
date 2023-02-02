@@ -1,48 +1,37 @@
 <main class="index_container">
   <h2>Sign up</h2>
-  <div class='form_style'>
-    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class="form_style">
+    <%= form_for(resource, as: resource_name,  data: {turbo: false}, url: registration_path(resource_name)) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
-        <%= f.label :name %><br />
-        <%= f.text_field :name, class:'input_style' %>
-      </div>
-
-      <div class="field">
-        <%= f.label :photo %><br />
-        <%= f.file_field :photo %>
-      </div>
-
-      <div class="field">
-        <%= f.label :bio %><br />
-        <%= f.text_field :bio, class:'input_style' %>
+        <%= f.label :name, "Username" %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Username", class:"input_style" %>
       </div>
 
       <div class="field">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'input_style' %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class:'input_style' %>
       </div>
-
+      
       <div class="field">
         <%= f.label :password %>
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password", class:'input_style' %>
+        <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class:'input_style' %>
       </div>
 
       <div class="field">
         <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:'input_style' %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class:'input_style' %>
       </div>
 
       <div class="actions index_container">
-        <%= f.submit "Sign up" %>
+        <%= f.submit "Sign up", :class => "button_style" %>
       </div>
-
-
     <% end %>
   </div>
+
   <%= render "devise/shared/links" %>
 </main>
