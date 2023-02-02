@@ -22,11 +22,11 @@
   </div>
   <ul class='post_list comments_box_border'>    
     <% @post.comments.each do |comment| %>
+    <li>
+      <p class= 'mrg_zero'><%= comment.author.name %>: <%= comment.text %></p>       
       <% if can? :destroy, comment %>
         <%= link_to "Delete Comment", user_post_comment_path(user_id: comment.author.id, post_id: @post.id, id: comment.id), data: { turbo_method: :delete }, class:'button_style' %>
       <% end %>
-    <li>
-      <p class= 'mrg_zero'><%= comment.author.name %>: <%= comment.text %></p>       
     </li>
   <% end %>  
   </ul>

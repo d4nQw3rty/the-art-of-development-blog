@@ -240,3 +240,10 @@ a:hover {
   box-shadow: 3px 3px;
   margin-top: 2em;
 }
+
+.comments_box_border li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
