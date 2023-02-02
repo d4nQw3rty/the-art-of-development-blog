@@ -198,7 +198,7 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 2em 0px;
+  padding: 2em 0;
 }
 
 .login_section form {
@@ -217,7 +217,8 @@ a:hover {
   box-shadow: 1px 1px;
 }
 
-.email_label, .password_label {
+.email_label,
+.password_label {
   display: none;
 }
 
