@@ -78,3 +78,4 @@ end
 
 gem 'devise'
 gem 'dotenv-rails', '~> 2.8'
+gem 'cancancan'
