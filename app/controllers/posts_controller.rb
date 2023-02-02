@@ -23,7 +23,16 @@ class PostsController < ApplicationController
     end
   end
 
-  private
+  def destroy
+    @current_user = current_user
+    @post = Post.find(params[:id])   
+    @post.author.update(posts_counter: @post.author.posts_counter - 1)
+    @post.destroy
+    redirect_to user_path(current_user)
+    
+  end
+
+private
 
   def post_params
     params.require(:post).permit(:title, :text)
