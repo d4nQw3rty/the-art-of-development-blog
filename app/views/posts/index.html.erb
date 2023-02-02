@@ -25,11 +25,6 @@
             </div>
             </div>
           </div>
-          <div>
-          <button type='button' class='button_style'>
-          <%= link_to "Delete Post", user_post_path(@user, post), data: { turbo_method: :delete } %>
-          </button>
-          </div>
 
         <div class = 'post_comments'>
         <% post.latest_comments.each do |comment| %>
