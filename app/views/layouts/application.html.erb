@@ -10,8 +10,11 @@
     <%= javascript_importmap_tags %>
     <%= stylesheet_link_tag "styles" %>
   </head>
-
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
   <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

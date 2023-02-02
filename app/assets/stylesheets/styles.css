@@ -178,3 +178,65 @@ a:hover {
   border: solid;
   border-radius: 5px;
 }
+
+.field {
+  margin-bottom: 0.5rem;
+}
+
+.actions {
+  margin-bottom: 2rem;
+}
+
+.field > input {
+  width: 100%;
+}
+
+/* login page */
+
+.login_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.login_section form {
+  width: 50vw;
+}
+
+.login_section .field {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.login_section #user_password,
+.login_section #user_email {
+  border: 2px solid;
+  height: 5vh;
+  box-shadow: 1px 1px;
+}
+
+.email_label,
+.password_label {
+  display: none;
+}
+
+.remember_check_box #user_remember_me {
+  width: inherit;
+}
+
+.remember_check_box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.login_btn {
+  width: 100%;
+  background: transparent;
+  height: 6vh;
+  box-shadow: 3px 3px;
+  margin-top: 2em;
+}
