@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  load_and_authorize_resource
+  load_and_authorize_resource except: :create
 
   def create
     @comment = Comment.new(comments_params)
