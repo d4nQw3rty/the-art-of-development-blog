@@ -20,12 +20,6 @@
   <div class='l'>
   <%= render 'likes/likes_form' %>
   </div>
-  <div>
-  <button type='button' class='button_style'>
-
-  <%= link_to "Delete Post", user_post_path(user_id: @post.author.id, id: @post.id), data: { turbo_method: :delete } %>
-  </button>
-  </div>
   <ul class='post_list comments_box_border'>    
     <% @post.comments.each do |comment| %>
     <li>
