@@ -76,6 +76,6 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'cancancan'
 gem 'devise'
 gem 'dotenv-rails', '~> 2.8'
-gem 'cancancan'

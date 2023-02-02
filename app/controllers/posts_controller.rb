@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  load_and_authorize_resource 
+  load_and_authorize_resource
 
   def index
     @current_user = current_user
@@ -27,14 +27,13 @@ class PostsController < ApplicationController
 
   def destroy
     @current_user = current_user
-    @post = Post.find(params[:id])   
+    @post = Post.find(params[:id])
     @post.author.update(posts_counter: @post.author.posts_counter - 1)
     @post.destroy
     redirect_to user_path(current_user)
-    
   end
 
-private
+  private
 
   def post_params
     params.require(:post).permit(:title, :text)
