@@ -1,8 +1,7 @@
 class Api::V1::CommentsController < Api::V1::ApplicationController
-
   def index
     @comments = Comment.where(post_id: params[:post_id])
-  
+
     render json: @comments, only: %i[id text]
   end
 
@@ -15,8 +14,8 @@ class Api::V1::CommentsController < Api::V1::ApplicationController
     @comment.author = User.first
     @comment.post = Post.find(params[:post_id])
 
-    if @comment.save      
-      render json: {status: "SUCCESS", message: "Comment was created successfully!", data: @comment}, status: :created
+    if @comment.save
+      render json: { status: 'SUCCESS', message: 'Comment was created successfully!', data: @comment }, status: :created
     else
       render json: @comment.errors, status: :unprocessable_entity
     end
