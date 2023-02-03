@@ -124,6 +124,18 @@ To run tests, run the following command:
 - Twitter: [@twitter](https://twitter.com/Danys_Linares)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/danys-linares)
 
+👤 **Kanza Tahreem**
+
+- GitHub: [@KanzaTahreem](https://github.com/KanzaTahreem)
+- Twitter: [@kanza_tahreem](https://twitter.com/kanza_tahreem)
+- LinkedIn: [kanza-tahreem](https://www.linkedin.com/in/kanza-tahreem/)
+  
+👤 **Camilo Vela**
+
+- GitHub: [@camilovelag](https://github.com/camilovelag)
+- Twitter: [@camilovelag](https://twitter.com/camilovelag)
+- LinkedIn: [camilovelag](https://linkedin.com/in/camilovelag)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

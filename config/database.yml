@@ -21,7 +21,7 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-  # # Camilo's config to connect to the database
+  # Camilo's config to connect to the database
   # username: <%= ENV['PG_USER'] %>
   # password: <%= ENV['PG_PASSWORD'] %>
   # host: <%= ENV['PG_HOST'] %>

@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  load_and_authorize_resource except: :create
+
   def create
     @comment = Comment.new(comments_params)
     @current_user = current_user
@@ -9,6 +11,14 @@ class CommentsController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def destroy
+    @current_user = current_user
+    @comment = Comment.find(params[:id])
+    @comment.post.update(comments_counter: @comment.post.comments_counter - 1)
+    @comment.destroy
+    redirect_to user_path(current_user)
   end
 
   private
