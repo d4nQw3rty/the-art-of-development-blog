@@ -2,7 +2,7 @@ class Api::V1::PostsController < Api::V1::ApplicationController
   def index
     @current_user = current_user
     @user = User.includes(:posts, posts: [:comments, { comments: [:author] }]).find(params[:user_id])
-    render json: @user.posts, only: %i[title text]
+    render json: @user.posts, only: %i[id title text author_id]
   end
 
   def show
