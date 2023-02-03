@@ -79,3 +79,4 @@ end
 gem 'cancancan'
 gem 'devise'
 gem 'dotenv-rails', '~> 2.8'
+gem 'active_model_serializers'
