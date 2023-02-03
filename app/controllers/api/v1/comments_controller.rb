@@ -11,7 +11,7 @@ class Api::V1::CommentsController < Api::V1::ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
-    @comment.author = User.first
+    @comment.author = User.find(params[:user_id])
     @comment.post = Post.find(params[:post_id])
 
     if @comment.save
