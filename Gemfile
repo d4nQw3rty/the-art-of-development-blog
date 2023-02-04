@@ -82,5 +82,6 @@ gem 'cancancan'
 gem 'devise'
 gem 'dotenv-rails', '~> 2.8'
 gem 'rswag-api'
-gem 'rswag-ui'
 gem 'rswag'
+gem 'rswag-ui'
+
