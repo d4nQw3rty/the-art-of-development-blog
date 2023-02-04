@@ -1,0 +1,12 @@
+<div>
+          <h3><%= link_to post.title, user_post_path(@user, post) %></h3>
+          <p><%= post.text %></p>
+        </div> 
+        <div class='counter_section'>       
+          <div>          
+            <p>Comments: <%= post.comments_counter %></p>
+          </div>
+          <div>                  
+            <p>Likes: <%= post.likes_counter %></p>
+          </div>      
+        </div>
