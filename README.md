@@ -8,25 +8,27 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [README](#readme)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Blog app ](#-blog-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Terminal](#terminal)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 # 📖 Blog app <a name="about-project"></a>
 
@@ -39,7 +41,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+      <li><a href="https://github.com/microverseinc/linters-config/tree/master/ror">Linters</a></li>
   </ul>
 </details>
 
@@ -63,6 +65,7 @@
 - **Sign in**
 - **Adding posts for each user**
 - **Liking multiple posts**
+- **Add API endpoints**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +95,7 @@ Clone this repository to your desired folder:
 ### Terminal
 
 > cd my-folder
-> git clone git@github.com:d4nQw3rty/the-art-of-development-blog.git
+> git clone `git@github.com:d4nQw3rty/the-art-of-development-blog.git`
 
 ### Install
 
@@ -101,20 +104,22 @@ Install almost all dependencies/gems of the project by running:
 - This one will install all gems inside GemFile including Rubocop:
 > `Bundle install` or `Bundle i`
 - This one will install stylelinter:
-> npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+> npm install `--save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 ### Usage
 
 To run the project, execute the following command:
 > `rails server` or `rails s`
+
 To run stylinter:
 > `npx stylelint "**/*.{css,scss}"`
+
 To run rubocop:
 > `rubocop`
 ### Run tests
 
 To run tests, run the following command:
 
-> bin/rails test test/models/article_test.rb
+> `bin/rails test test/models/article_test.rb`
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
