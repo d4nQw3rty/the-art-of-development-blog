@@ -13,19 +13,9 @@
         <li>
         <div class = 'list_element'>
           <div>
-            <h3><%= link_to post.title, user_post_path(@user, post) %></h3>
-            <p><%= post.text %></p>
+            <%= render 'share/post_header', post: post %>
           </div>
-          <div class='counter_section'>
-            <div>            
-              <p>Comments: <%= post.comments_counter %></p>
-            </div>
-            <div>
-              <p class='post-counter'>Likes: <%= post.likes_counter %></p>
-            </div>
-            </div>
-          </div>
-
+        </div>
         <div class = 'post_comments'>
         <% post.latest_comments.each do |comment| %>
           <p><%= comment.author.name %>: <%= comment.text %></p>
