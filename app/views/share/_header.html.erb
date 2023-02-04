@@ -1,0 +1,7 @@
+<div class= 'header_img'>
+        <img class='header_photo' src='<%= user.photo %>' alt="<%= user.name %>'s profile picture" />
+      </div>
+      <div class='header_info'>
+        <h2><%= link_to user.name, user_path(user) %></h2>
+        <p class='header_counter'>Number of Posts: <%= user.posts_counter %></p>
+      </div>
